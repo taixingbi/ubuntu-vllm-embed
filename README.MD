@@ -31,9 +31,16 @@ docker compose up -d
 Embeddings:
 
 ```bash
+http://192.168.86.173:8001/docs
+http://192.168.86.176:8001/docs
+
 curl http://192.168.86.173:8001/v1/embeddings \
   -H "Content-Type: application/json" \
-  -d '{"model":"BAAI/bge-m3","input":"Hello"}'
+  -d '{"model":"BAAI/bge-m3","input":"Where is jersey city"}'
+
+curl http://192.168.86.176:8001/v1/embeddings \
+  -H "Content-Type: application/json" \
+  -d '{"model":"BAAI/bge-m3","input":"Where is jersey city"}'
 ```
 
 ## Local run (no Docker)
