@@ -7,6 +7,12 @@ Run **BAAI/bge-m3** embeddings with vLLM on Ubuntu using an NVIDIA GPU.
 - **NVIDIA GPU** — 24GB VRAM recommended for embeddings
 - **NVIDIA drivers + CUDA** — `nvidia-smi` works
 - **Docker** — [Docker Engine](https://docs.docker.com/engine/install/)
+
+```bash
+sudo apt  install docker.io
+sudo apt install docker-compose-plugin -y
+```
+
 - **NVIDIA Container Toolkit** — [Install guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html); [docker.md](docker.md) for Ubuntu fix. Verify: `docker run --rm --gpus all nvidia/cuda:12.0-base nvidia-smi`
 - **Python 3.10+** — for local run only
 
